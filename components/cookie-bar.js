@@ -26,6 +26,8 @@ const barAnim = {
 }
 
 const CookieBar = React.memo(({ data = {} }) => {
+  if (!data) return null
+
   const { enabled, message, link } = data
 
   if (!enabled) return null

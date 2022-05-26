@@ -26,8 +26,7 @@ export default {
       description: 'The content that exists inside this column',
       of: [
         { type: 'freeform' },
-        { type: 'accordions' },
-        { type: 'productCard' }
+        { type: 'accordions' }
       ]
     }
   ],

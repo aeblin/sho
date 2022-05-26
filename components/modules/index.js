@@ -5,8 +5,6 @@ const Grid = dynamic(() => import('./grid'))
 const Hero = dynamic(() => import('./hero'))
 const Marquee = dynamic(() => import('./marquee'))
 const DividerPhoto = dynamic(() => import('./divider-photo'))
-const ProductHero = dynamic(() => import('./product-hero'))
-const Collection = dynamic(() => import('./collection-grid'))
 
 export const Module = ({
   index,
@@ -27,22 +25,6 @@ export const Module = ({
       return <Marquee index={index} data={module} />
     case 'dividerPhoto':
       return <DividerPhoto index={index} data={module} />
-    case 'productHero':
-      return (
-        <ProductHero
-          index={index}
-          product={product}
-          activeVariant={activeVariant}
-          onVariantChange={onVariantChange}
-        />
-      )
-    case 'collectionGrid':
-      return (
-        <Collection
-          index={index}
-          data={{ ...module, products: collectionProducts }}
-        />
-      )
     default:
       return null
   }

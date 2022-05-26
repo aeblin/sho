@@ -15,8 +15,6 @@ import {
   useTogglePageTransition,
 } from '@lib/context'
 
-import Cart from '@components/cart'
-
 // Console Credits
 if (isBrowser) {
   console.groupCollapsed(
@@ -98,8 +96,6 @@ const Site = ({ Component, pageProps, router }) => {
       >
         <Component key={pageID} {...pageProps} />
       </AnimatePresence>
-
-      <Cart data={{ ...data?.site }} />
     </LazyMotion>
   )
 }

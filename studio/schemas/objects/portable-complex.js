@@ -108,9 +108,7 @@ export default {
                 name: 'page',
                 type: 'reference',
                 to: [
-                  { type: 'page' },
-                  { type: 'collection' },
-                  { type: 'product' }
+                  { type: 'page' }
                 ],
                 hidden: ({ parent }) => parent.linkType !== 'internal'
               },

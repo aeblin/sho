@@ -6,7 +6,6 @@ const singletons = [
   'promoSettings',
   'headerSettings',
   'footerSettings',
-  'shopSettings',
   'seoSettings',
   'media.tag' // for media plugin
 ]

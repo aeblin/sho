@@ -30,6 +30,13 @@ export default {
       }
     },
     {
+      title: 'Enable Cart?',
+      name: 'cartEnabled',
+      type: 'boolean',
+      description: 'Display Cart Toggle in right-side menu?',
+      initialValue: false
+    },
+    {
       title: 'Desktop Menu (Left)',
       name: 'menuDesktopLeft',
       type: 'reference',

@@ -3,7 +3,6 @@ import S from '@sanity/desk-tool/structure-builder'
 import {
   Gear,
   PaintBucket,
-  ShoppingCart,
   NavigationArrow,
   AnchorSimple,
   Cookie,
@@ -32,16 +31,6 @@ export const settingsMenu = S.listItem()
           .title('Colors')
           .child(S.documentTypeList('solidColor').title('Colors'))
           .icon(PaintBucket),
-        S.divider(),
-        S.listItem()
-          .title('Shop')
-          .child(
-            S.editor()
-              .id('shopSettings')
-              .schemaType('shopSettings')
-              .documentId('shopSettings')
-          )
-          .icon(ShoppingCart),
         S.divider(),
         S.listItem()
           .title('Header')

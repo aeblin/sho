@@ -19,18 +19,6 @@ export default {
       group: 'displays'
     },
     {
-      title: 'Shop Page',
-      name: 'shop',
-      type: 'reference',
-      to: [{ type: 'collection' }],
-      description: (
-        <>
-          This collection will show at: <code>/shop</code>
-        </>
-      ),
-      group: 'displays'
-    },
-    {
       title: 'Error Page (404)',
       name: 'error',
       type: 'reference',

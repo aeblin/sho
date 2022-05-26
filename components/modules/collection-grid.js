@@ -15,11 +15,10 @@ import { useSiteContext } from '@lib/context'
 import CollectionFilter from '@components/collection-filter'
 import CollectionFilterChips from '@components/collection-filter-chips'
 import CollectionSort from '@components/collection-sort'
-import ProductCard from '@components/product-card'
 import BlockContent from '@components/block-content'
 
 const Collection = ({ data = {} }) => {
-  const { title, products, filter, sort, paginationLimit, noFilterResults } =
+  const { title, filter, sort, paginationLimit, noFilterResults } =
     data
 
   if (!products || products.length === 0) return null

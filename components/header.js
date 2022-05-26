@@ -25,6 +25,7 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
   // expand our header data
   const {
     promo,
+    cartEnabled,
     menuDesktopLeft,
     menuDesktopRight,
     menuMobilePrimary,
@@ -159,8 +160,7 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
                       />
                     </div>
                   </FocusTrap>
-
-                  <CartToggle />
+                  {cartEnabled && <CartToggle />}
                 </div>
 
                 {/* Desktop Header Menu */}
@@ -184,7 +184,7 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
                       />
                     )}
 
-                    <CartToggle />
+                    {cartEnabled && <CartToggle />}
                   </div>
                 </div>
               </nav>

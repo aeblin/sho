@@ -25,7 +25,7 @@ const singletons = [
 
 const editAndDelete = ['product', 'productVariant']
 
-const previews = ['page', 'product', 'collection']
+const previews = ['page']
 
 const PreviewAction = props => {
   const slug = props.draft
